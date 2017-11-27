@@ -3,7 +3,7 @@
   "scripts": {
     "test": "jest",
     "coverage": "jest --coverage",
-    "test-watch": "jest --watch"
+    "test-watch": "jest --watchAll"
   },
   "license": "MIT",
   "devDependencies": {
