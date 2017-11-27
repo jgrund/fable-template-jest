@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Joe Grund",
+  "classifications": ["Jest", "Fable", "Testing"],
+  "identity": "Fable.Template.Jest",
+  "name": "Simple Fable Jest (Testing) App",
+  "shortName": "fable-jest",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "preferNameDirectory": true
+}

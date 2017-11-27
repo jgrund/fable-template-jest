@@ -1,0 +1,22 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  "command": "dotnet",
+  "runner": "terminal",
+  "args": [],
+  "tasks": [
+    {
+      "taskName": "Test",
+      "args": ["fable", "npm-run", "test"],
+      "suppressTaskName": true,
+      "isTestCommand": true
+    },
+    {
+      "taskName": "Coverage",
+      "args": ["fable", "npm-run", "coverage"],
+      "suppressTaskName": true,
+      "isTestCommand": true
+    }
+  ]
+}
