@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+
+    <!-- fill some nuget package props (optional) -->
+    <Description>Simple Fable Jest App</Description>
+    <Authors>Joe Grund</Authors>
+    <!-- fill nuget package version (optional) -->
+    <Version>0.0.1</Version>
+
+    <!-- this is a package -->
+    <PackageType>Template</PackageType>
+
+    <!-- cruft need to avoid building and making dotnet sdk happy -->
+    <PackProjectInputFile>$(MSBuildProjectFullPath)</PackProjectInputFile>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- simple way to exclude things (optional but nice) -->
+    <ExcludeFromPackage>
+        Content/node_modules/**/*;
+        Content/coverage/**/*;
+        Content/bin/**/*;
+        Content/obj/**/*;
+        Content/src/bin/**/*;
+        Content/src/obj/**/*;
+        Content/test/bin/**/*;
+        Content/test/obj/**/*;
+    </ExcludeFromPackage>
+</PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content/**/*" Exclude="$(ExcludeFromPackage)" >
+        <PackagePath>Content\</PackagePath>
+    </Content>
+  </ItemGroup>
+</Project>
