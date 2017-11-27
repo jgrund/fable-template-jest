@@ -20,7 +20,7 @@ support.
 
 ## Installing the template
 
-In a terminal, run `dotnet new -i Fable.Jest.Template` to install or update the
+In a terminal, run `dotnet new -i Fable.Template.Jest` to install or update the
 template to the latest version.
 
 ## Creating a new project with the template
