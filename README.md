@@ -1,5 +1,7 @@
 # Fable Jest Template
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jgrund/fable-jest-template.svg)](https://greenkeeper.io/)
+
 This template can be used to generate a simple testing app with
 [Fable](http://fable.io/) and [Jest](https://facebook.github.io/jest/).
 
