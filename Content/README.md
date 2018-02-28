@@ -25,8 +25,8 @@ template to the latest version.
 
 ## Creating a new project with the template
 
-In a terminal, run `dotnet new jest` to create a project in the current
-directory. Type `dotnet new jest -n MyApp` instead to create a subfolder named
+In a terminal, run `dotnet new jest -lang F#` to create a project in the current
+directory. Type `dotnet new jest -n MyApp -lang F#` instead to create a subfolder named
 `MyApp` and put the new project there.
 
 > The project will have the name of the directory. You may get some issues if
